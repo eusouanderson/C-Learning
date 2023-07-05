@@ -1,28 +1,25 @@
-﻿Console.WriteLine("Digite seu nome: ");
+﻿//ARRAYS 
 
-string name = Console.ReadLine();
+string[] names = {"Anderson", "Silva", "João"};
 
-Console.WriteLine("Digite seu sobrenome: ");
+int[] numbers = {1, 2, 3};
 
-string lastname = Console.ReadLine();
+float[] floats = {1.1f, 2.2f, 3.3f};
 
-Console.Write("Digite o ano de nascimento: ");
+double[] doubles = {1.1, 2.2, 3.3};
 
-int year = int.Parse(Console.ReadLine());
 
-int age = 2023 - year;
-
-Console.WriteLine($"Você nasceu no ano: {year} e seu nome é: {name} {lastname} e sua idade é: {age}");
-
-if (age >= 18 && age <= 60)
+for (int i = 0; i < names.Length; i++)
 {
-    Console.WriteLine("Você é maior de idade e voto é obrigatório");
+    Console.WriteLine(names[i]);
 }
-else if (age < 18 && age > 15)
+
+for (int i = 0; i < numbers.Length; i++)
 {
-    Console.WriteLine("Você é menor de idade e seu voto não é obrigatório");
+    Console.WriteLine(numbers[i]);
 }
-else
+
+for (int i = 0; i < floats.Length; i++)
 {
-    Console.WriteLine("Você é menor de idade e você ainda não vota ");
+    Console.WriteLine(floats[i]);
 }
